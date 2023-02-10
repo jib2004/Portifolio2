@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box ;
+    margin: 0 ;
+    padding: 0 ;
+}
+body{
+    color: white ;
+    background-color: black;
+    font-family: 'Poppins', sans-serif ;
+}
+header{
+    /* border: 1px solid red; */
+    height: 729px ;   
+}
+
+nav{
+    display: flex ;
+    /* border: 1px solid red; */
+
+    align-items: center ;
+}
+nav h1{
+    /* border: 1px solid red; */
+    flex-basis: 20% ;
+    padding-top: 10px ;
+    padding-left: 20px ;
+}
+
+nav h1 span{
+    color: rgb(227, 32, 97) ;
+}
+
+.list-container{
+    list-style: none ;
+    /* border: 1px solid red; */
+    flex-basis: 60% ;
+    display: flex ;
+    justify-content: space-around ;
+    align-items: center ;
+    
+}
+
+ .list-container li{
+    padding: 10px 0 ;
+} 
+
+.list-container li a{
+    text-decoration: none ;
+    font-size: small ;
+    color: white ;
+    transition: color 1s ;
+}
+
+.list-container li a:hover{
+    color: rgb(227, 32, 97) ;
+}
+
+.subscribe-container{
+    /* border: 1px solid red; */
+    flex-basis: 20% ;
+    padding-top: 10px ;
+    padding-bottom: 5px ;
+    padding-left: 60px ;
+}
+
+.subscribe{
+    color: white;
+    background-color: rgb(227, 32, 97) ;
+    padding: 10px 20px ;
+    border:1px solid rgb(227, 32, 97) ;
+    border-top-right-radius: 15px ;
+    border-bottom-left-radius: 15px ;
+    border-bottom-right-radius: 15px ;
+    border-top-left-radius: 15px ;
+    cursor: pointer ;
+    transition: all 1s ;
+}
+
+.subscribe:hover{
+    border:1px solid rgb(227, 32, 97) ; 
+    background-color: black ;  
+}
+
+.description{
+    display: flex ;
+    align-items: center ;
+    justify-content: space-around ;
+    position: relative ;
+    top:10% ;
+    left: 70px ;
+}
+
+.description h1 span{
+    color: rgb(227, 32, 97) ;
+}
+
+.intro_container h4{
+    margin-bottom: 10px ;
+}
+
+.intro_container h1{
+    margin-bottom: 10px ;
+}
+
+.intro_container h2{
+    margin-bottom: 10px ;
+}
+
+.email_container{
+    margin-top: 10px ;
+    position: relative ;
+}
+
+.email_container > input{
+    padding:12px 5px ;
+    width: 400px ;
+    font-size: 16px ;
+    border-top-right-radius: 15px ;
+    border-bottom-left-radius: 15px ;
+    border-bottom-right-radius: 15px ;
+    border-top-left-radius: 15px ;
+    
+}
+
+.email_container  a button{
+    position: absolute ;
+    top: 3px ;
+    right: 5px ;
+    color: white ;
+    background-color: rgb(227, 32, 97) ;
+    padding: 10px 20px ;
+    border:1px solid rgb(227, 32, 97) ;
+    border-top-right-radius: 15px ;
+    border-bottom-left-radius: 15px ;
+    border-bottom-right-radius: 15px ;
+    border-top-left-radius: 15px ;
+    cursor: pointer ;
+    transition: all 1s;
+}
+
+.email_container  a button:hover{
+    border:1px solid rgb(227, 32, 97) ; 
+    background-color: black ;  
+}
+
+.about_me_container{
+    color: antiquewhite;
+    padding-left: 10px ;
+}
+
+.service_container{
+    margin-top: 30px ;
+    padding-left: 10px ;
+}
+
+.service_container h2{
+    margin: 0 auto ;
+    color: antiquewhite;
+    text-decoration: underline ;
+}
+
+.service_container table{
+    width: 55% ;
+}
+
+table{
+    margin: 0 auto;
+    margin-top: 30px;
+    color: antiquewhite;
+}
+
+.first-col{
+    border-bottom: none;
+}
+.buttom-col{
+    border-top: none;
+}
+
+td{
+    padding: 10px;
+}
+
+.range{
+    margin-left: 10px;
+    background-color: black;
+    color: antiquewhite;
+    width: 39px;
+    border: 1px solid antiquewhite;
+}
+footer{
+    width: 100%;
+    margin-top: 100px;
+    border: 1px solid rgb(227, 32, 97);
+    background-color: rgb(227, 32, 97);
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   justify-content: space-around;
+}
