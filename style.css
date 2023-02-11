@@ -73,12 +73,29 @@ nav h1 span{
     border-bottom-right-radius: 15px ;
     border-top-left-radius: 15px ;
     cursor: pointer ;
+    position: relative;
     transition: all 1s ;
 }
 
 .subscribe:hover{
     border:1px solid rgb(227, 32, 97) ; 
     background-color: black ;  
+}
+
+.subscribe::before{
+    content: attr(data-tool);
+    position: absolute;
+    width: 100%;
+    top: 120%;
+    left: 0;
+    background-color: black;
+    border: 1px solid rgb(227, 32, 97);
+    visibility: hidden;
+    z-index: 1;
+}
+
+.subscribe:hover::before{
+    visibility:visible;
 }
 
 .description{
@@ -98,17 +115,107 @@ nav h1 span{
     margin-bottom: 10px ;
 }
 
+.first{
+    animation: first 5s  ease forwards;
+
+}
+
+@keyframes  first{
+    from{
+       
+        transform: scaleX(-500px);  opacity: 0;
+    }    
+    to{
+        
+        transform: scaleX(100px);opacity: 1;
+    }
+}
+
+
 .intro_container h1{
     margin-bottom: 10px ;
+}
+.second{
+    animation: first 10s  ease forwards;
+
+
+}
+
+@keyframes  second{
+    from{
+       
+        transform: scaleX(-500px);
+         opacity: 0; 
+    }    
+
+    to{
+        
+        transform: scaleX(100px);
+         opacity: 1; 
+    }
 }
 
 .intro_container h2{
     margin-bottom: 10px ;
 }
 
+.third{
+    position: relative;
+
+}
+
+.third::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: black;
+    color: black;
+  
+    border-right: 2px solid white ;
+    
+    animation: third 5s ease forwards;
+}
+
+@keyframes third {
+    0%{
+        width: 100%;  
+    }
+
+    100%{
+        width: 0;
+     
+        visibility: hidden;
+    }
+}
+
 .email_container{
     margin-top: 10px ;
     position: relative ;
+}
+.forth{
+    animation: forth 5s linear forwards;
+}
+
+@keyframes forth {
+    0%{
+        transform: rotateY(0);
+    }
+
+    50%{
+            transform: rotateY(90deg);
+           
+    }
+    70%{
+        transform: rotateX(180deg);
+        
+    }
+
+   100%{
+        transform: rotateX(360deg);
+    }
 }
 
 .email_container > input{
