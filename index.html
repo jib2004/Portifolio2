@@ -167,23 +167,23 @@
 
             <tr>
                 <td class="">Pages</td>
-                <td>1 - 4 <input type="number" name="" id="price_col-1" value="" class="range" title="Kindly select the number of days within the range given"></td>
-                <td>5 - 10 <input type="number" name="" id="price_col-2" value="" class="range" title="Kindly select the number of days within the range given"></td>
-                <td>11 - 20 <input type="number" name="" id="price_col-3" value="" class="range" title="Kindly select the number of days within the range given"></td>
+                <td>1 - 4 <input type="number" name="" id="price_col-1" onkeyup="pay1(this.value)" value="" class="range" title="Kindly select the number of days within the range given"></td>
+                <td>5 - 10 <input type="number" name="" id="price_col-2" onkeyup="pay2(this.value)" value="" class="range" title="Kindly select the number of days within the range given"></td>
+                <td>11 - 20 <input type="number" name="" id="price_col-3" value="" onkeyup="pay3(this.value)" class="range" title="Kindly select the number of days within the range given"></td>
             </tr>
 
             <tr>
                 <td>prices</td>
-                <td id="price-1">$40</td>
-                <td id="price-2">$60</td>
-                <td id="price-3">$100</td>
+                <td id="price-1" aria-valuenow="40"> <span>$</span>  40</td>
+                <td id="price-2" aria-valuenow="60"> <span>$</span>  60</td>
+                <td id="price-3" aria-valuenow="100"> <span>$</span>  100</td>
             </tr>
 
             <tr>
                 <td>Hosting</td>
-                <td id="host_price-1">$25</td>
-                <td id="host_price-2">$40</td>
-                <td id="host_price-3">$65</td>
+                <td id="host_price-1" aria-valuenow="25"> <span>$</span>  25</td>
+                <td id="host_price-2" aria-valuenow="40"> <span>$</span>  40</td>
+                <td id="host_price-3" aria-valuenow="65"> <span>$</span> 65</td>
             </tr>
 
             <tr>
@@ -193,6 +193,8 @@
                 <td><span id="span_price_col-3"></span></td>
             </tr>
            </table>
+
+           <button>Order Now</button>
         </div>
 
 

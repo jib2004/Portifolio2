@@ -331,6 +331,11 @@ table{
     color: antiquewhite;
 }
 
+.range::-webkit-inner-spin-button,
+.range::-webkit-outer-spin-button{
+    appearance: none;
+}
+
 .first-col{
     border-bottom: none;
 }
