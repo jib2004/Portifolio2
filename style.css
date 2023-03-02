@@ -446,6 +446,14 @@ footer ul {
         text-align: start;
     }
 
+    #about{
+        margin-top: 5%;
+    }
+
+    .about_margin{
+        margin-top:40% !important;;
+    }
+
     .navDisplay li > a{
         width: 100%;
         text-align: start;
