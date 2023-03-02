@@ -122,6 +122,10 @@ nav h1 span{
     visibility:visible;
 }
 
+.icon_div{
+    display: none;
+}
+
 .description{
     display: flex ;
     align-items: center ;
@@ -358,4 +362,92 @@ footer ul {
     align-items: center;
    justify-content: center;
    justify-content: space-around;
+}
+
+
+@media (max-width:576px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .list-container,.subscribe-container{
+        display: none;
+    }    
+    
+    nav{
+        /* border: 1px solid; */
+
+        
+    }
+    
+    nav h1{
+        flex-basis: 50%;
+    }
+
+    .intro_container{
+        /* border: 10px solid; */
+        width: max-content;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .intro_container h1{
+        /* border: 10px solid; */
+        width: max-content;
+
+    }
+
+    .intro_container h4{
+        /* border: 10px solid; */
+        width: max-content;
+
+    }
+
+    .icon_div{
+        display: flex;
+        /* border: 1px solid; */
+        padding: 10px;
+        justify-content: end;
+        flex-basis: 50%;
+    }
+
+    .description{
+        display: grid;
+        /* border: 1px solid; */
+        position: static;
+        /* padding-left: 10px; */
+        margin-bottom: 20px;
+        /* width: max-content; */
+    }
+    .email_container{
+        /* border: 1px solid; */
+        width: max-content;
+    }
+
+    .email_container > input[type="email"]{
+        width: 250px;
+        margin-right: 0;
+        border-top-right-radius:0;
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
+    border-top-left-radius:0;
+
+    }
+
+
+    .email_container  a button{
+        position: static;
+        border-top-right-radius:0;
+        border-bottom-left-radius:0;
+        border-bottom-right-radius:0;
+        border-top-left-radius: 0;
+    }
+
+    .image_container{
+        width: 100%;
+    }
+
+    td{
+        padding: 5px;
+    }
 }
